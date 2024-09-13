@@ -16,7 +16,7 @@ export function apply(ctx: Context) {
 }
 
 function extractSpeedtestUUID(url) {
-  const pattern = /^https:\/\/www\.speedtest\.net\/result\/[^\/]+\/(.+)$/;
+  const pattern = /^https:\/\/www\.speedtest\.net\/result\/(.+)$/;
   const match = url.match(pattern);
   if (match) {
     return match[1];
@@ -25,7 +25,7 @@ function extractSpeedtestUUID(url) {
 }
 
 function extractSpeedtestID(url) {
-  const pattern = /^https:\/\/www\.speedtest\.net\/my-result\/[^\/]+\/(.+)$/;
+  const pattern = /^https:\/\/www\.speedtest\.net\/my-result\/(.+)$/;
   const match = url.match(pattern);
   if (match) {
     return match[1];
