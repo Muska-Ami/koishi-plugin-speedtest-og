@@ -1,12 +1,15 @@
 {
   "name": "@muska-ami/koishi-plugin-speedtest-og",
   "description": "自动获取 Speedtest OpenGraph 图片发送",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
+  ],
+  "contributors": [
+    "夏沫花火zzz🌙 <ami@muska.zip>"
   ],
   "license": "MIT",
   "scripts": {},
@@ -15,6 +18,14 @@
     "koishi",
     "plugin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muska-Ami/koishi-plugin-speedtest-og.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.17.11"
