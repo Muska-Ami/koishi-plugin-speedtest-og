@@ -10,7 +10,7 @@ export function apply(ctx: Context) {
   ctx.on('message', (session) => {
     let key = extractSpeedtestUUID(session.content) ?? extractSpeedtestID(session.content);
     if (key != null) {
-      session.send(h('img', { src: `https://www.speedtest.net/result/c/${key}.png` }));
+      session.send(h('img', { src: `https://www.speedtest.net/result/${key}.png` }));
     }
   })
 }
